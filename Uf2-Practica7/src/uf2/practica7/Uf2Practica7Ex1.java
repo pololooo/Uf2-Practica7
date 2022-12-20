@@ -8,10 +8,17 @@ inferior a 100€ i de 35% si el preu és igual o superior a 100€.
  */
 package uf2.practica7;
 
+import java.util.*;
+
 public class Uf2Practica7Ex1 {
 
+    static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) {
-        //tonto 1
+        // TODO code application logic here
     }
 
+    public static void CalcularDescompte() {
+        // TODO code application logic here
+    }
 }
