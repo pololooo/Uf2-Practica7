@@ -16,10 +16,17 @@ que s’ha tret.
  */
 package uf2.practica7;
 
+import java.util.*;
+
 public class Uf2Practica7Ex6 {
+
+    static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
         // TODO code application logic here
     }
 
+    public static void Pila() {
+        // TODO code application logic here
+    }
 }
