@@ -10,38 +10,30 @@ import java.util.*;
 
 public class Uf2Practica7Ex4 {
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+    static Scanner scan = new Scanner(System.in);
 
+    public static void main(String[] args) {
         boolean correcte = false;
 
         ValidarSuperusuari(correcte);
     }
 
     public static boolean ValidarSuperusuari(boolean correcte) {
-        Scanner scan = new Scanner(System.in);
-
         final int numIntentos = 3;
-        int numError = 0;
         String contraCorrecte = "DAM-M03";
         String contrasenya = null;
 
-        do {
-            for (int i = 0; i < numIntentos; i++) {
-                System.out.println("Introdueix la contrasenya: ");
-                contrasenya = scan.nextLine();
-                if (contrasenya.equals(contraCorrecte)) {
-                    correcte = true;
-                    System.out.println("Contrasenya correcte. " + numError + " intents.");
-                } else {
-                    correcte = false;
-                    numError++;
-                    System.out.println("Incorrecte. Prova de nou.");
-                }
+        for (int i = 0; i < numIntentos && !correcte; i++) {
+            System.out.println("Introdueix la contrasenya: ");
+            contrasenya = scan.nextLine();
+            if (contrasenya.equals(contraCorrecte)) {
+                correcte = true;
+                System.out.println("Contrasenya correcte. " + (i + 1) + " intents.");
+            } else {
+                correcte = false;
+                System.out.println("Incorrecte. Prova de nou.");
             }
-        } while (correcte = false);
-
-        scan.close();
+        }
 
         return correcte;
     }
