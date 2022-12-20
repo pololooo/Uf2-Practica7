@@ -6,10 +6,25 @@ tornar si l’usuari ha encertat o no el password.
  */
 package uf2.practica7;
 
+import java.util.*;
+
 public class Uf2Practica7Ex4 {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner scan = new Scanner(System.in);
+        
+        
     }
 
+    public static void ValidarSuperusuari() {
+        Scanner scan = new Scanner(System.in);
+        
+        final int numIntents = 3;
+        String contrasenya;
+        
+        for (int i = 0; i < numIntents; i++) {
+            System.out.println("Introdueix la contrasenya: ");
+            contrasenya = scan.nextLine();
+        }
+    }
 }
