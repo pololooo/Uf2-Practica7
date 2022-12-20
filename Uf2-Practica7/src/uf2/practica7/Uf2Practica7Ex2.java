@@ -6,10 +6,16 @@ d’IVA pot ser General, Reduït, Superreduït o Exempt. El percentatge a aplica
  */
 package uf2.practica7;
 
+import java.util.*;
+import utils.Utils;
+
 public class Uf2Practica7Ex2 {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
 
+    public static void CalcularIVA() {
+
+    }
 }
